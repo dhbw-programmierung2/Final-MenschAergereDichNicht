@@ -35,7 +35,7 @@ import javafx.scene.paint.ImagePattern;
  */
 public class GameBoardSixPlayersController {
 	/*
-	 * FXML Komponenten, die sp‰ter auf dem Feld zu sehen sind 
+	 * FXML Komponenten, die sp√§ter auf dem Feld zu sehen sind 
 	 */
 	@FXML
 	public SplitPane splitPane;
@@ -196,12 +196,15 @@ public class GameBoardSixPlayersController {
 		txtPlayer1.setText(playerName.get(0) + " - " + color.get(0));
 		txtPlayer2.setText(playerName.get(1) + " - " + color.get(1));
 		txtPlayer3.setText(playerName.get(2) + " - " + color.get(2));
-		txtPlayer4.setText(playerName.get(3) + " - " + color.get(3));
-		txtPlayer5.setText(playerName.get(4) + " - " + color.get(4));
 		
-		if(numberOfPlayers == 6) {
+		if(numberOfPlayers == 5) {
+			txtPlayer4.setText(playerName.get(3) + " - " + color.get(3));
+			txtPlayer5.setText(playerName.get(4) + " - " + color.get(4));
+		}else if(numberOfPlayers == 6) {
+			txtPlayer4.setText(playerName.get(3) + " - " + color.get(3));
+			txtPlayer5.setText(playerName.get(4) + " - " + color.get(4));
 			txtPlayer6.setText(playerName.get(5) + " - " + color.get(5));
-		
+		}
 		/*
 		 * Check ob die Farbe Gruen ausgewaehlt wurde.
 		 * Definiert Basis fuer Gruen
@@ -286,7 +289,7 @@ public class GameBoardSixPlayersController {
 			populatePurple();
 		}
 	}	
-}
+
 	
 	/*
 	 * Setzt die Lila Spielfiguren in die lila Basis
@@ -365,7 +368,7 @@ public class GameBoardSixPlayersController {
 		
 		//Zu Beginn mit einer Spielfigur auf dem Feld starten
 		crcField33.setFill(new ImagePattern(im1));
-}
+	}
 	
 	/*
 	 *  Event Listener fuer
@@ -453,23 +456,4 @@ public class GameBoardSixPlayersController {
 		System.exit(0);
 	}
 	
-	private ArrayList<Node> nodeList = new ArrayList<Node>();
-	private ArrayList<Circle> circleList = new ArrayList<Circle>();
-	
-	public void initSelectGUI() {
-		// TODO Auto-generated method stub
-		// Liste erstellen die alle Nodes enthaelt die auf der Splitpane sind
-				/**splitPane.getChildren().forEach(x -> nodeList.add(x));
-				for (Node tempNode : nodeList) {
-					if(tempNode instanceof Circle) {
-						circleList.add((Circle) tempNode);
-					}
-				}
-				for(Circle tempCircle : circleList) {
-					tempCircle.radiusProperty().bind(splitPane.widthProperty().divide(30));
-					tempCircle.centerXProperty().bind(splitPane.widthProperty().divide(30));
-					tempCircle.centerYProperty().bind(splitPane.widthProperty().divide(30));
-				}
-				*/	
-	}
 }
