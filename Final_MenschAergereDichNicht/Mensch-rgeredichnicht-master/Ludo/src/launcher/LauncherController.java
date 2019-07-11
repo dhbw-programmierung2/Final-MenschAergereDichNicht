@@ -18,8 +18,8 @@ import sixplayersgame.GameBoardSixPlayersController;
 import fourplayersgame.GameBoardFourPlayersController;
 
 /**
- * Der Launcher Controller ist f�r die Funktionalit�t des Launchers verantwortlich.
- * Hier kann der Spieler die Voreinstellungen f�r das Spiel t�tigen.
+ * Der Launcher Controller ist für die Funktionalität des Launchers verantwortlich.
+ * Hier kann der Spieler die Voreinstellungen für das Spiel tätigen.
  * 
  * @author Lukas, Kim, Isabelle, Jonas
  * @version 1.0
@@ -138,7 +138,7 @@ public class LauncherController {
 		}
 		
 		/*
-		 * Die Textfelder und ComboBoxen fuer den Spieler 1 und Spieler 2 werden aktiviert, außer die ComboBox Farben fuer Spieler 2 da der Spieler 2 immer gegenueber der Farbe des Spielers 1 sein muss
+		 * Die Textfelder und ComboBoxen fuer den Spieler 1 und Spieler 2 werden aktiviert, auÃŸer die ComboBox Farben fuer Spieler 2 da der Spieler 2 immer gegenueber der Farbe des Spielers 1 sein muss
 		 */
 		txtName1.setDisable(false);
 		cbColor1.setDisable(false);
@@ -178,7 +178,7 @@ public class LauncherController {
 			cbColor1.getItems().add("Lila");
 			cbColor1.setValue("Gelb");
 			
-			cbColor2.getItems().clear();
+			cbColor2.getItems().removeAll();
 			cbColor2.getItems().add("Blau");
 			cbColor2.getItems().add("Gruen");
 			cbColor2.setValue("Blau");
@@ -378,7 +378,7 @@ public class LauncherController {
 		 */
 		else if(rbPlayer3.isSelected()) {
 			
-			cbColor2.getItems().clear();
+			cbColor2.getItems().removeAll();
 			cbColor2.getItems().add("Gelb");
 			cbColor2.getItems().add("Rot");
 			cbColor2.getItems().add("Gruen");
@@ -475,7 +475,7 @@ public class LauncherController {
 	}
 
 	/*
-	 * Es wird anschließend die Auswahl fuer die erste und zweite Farbe ueberprueft und die Farbe fuer die dritte Farbe, also fuer den Spieler 3 automatisch ausgewaehlt.
+	 * Es wird anschlieÃŸend die Auswahl fuer die erste und zweite Farbe ueberprueft und die Farbe fuer die dritte Farbe, also fuer den Spieler 3 automatisch ausgewaehlt.
 	 * Die dritte Farbe kann nicht veraendert werden.
 	 */
 	public void setcbColor3() {
@@ -608,7 +608,7 @@ public class LauncherController {
 	
 	/*
 	 * Die Eingaben beim Spieler 1 und Spieler 2 werden auf Vollstaendigkeit und Richtigkeit ueberprueft.
-	 * @return Es wird false zurueckgegeben, wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu Große oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
+	 * @return Es wird false zurueckgegeben, wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu GroÃŸe oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
 	 * @return Es wird true zurueckgegeben, wenn alles richtig und vollstaendig ist und die Eingaben werden den ArrayList hinzugefuegt
 	 */
 	public boolean checkSelection1and2 () {
@@ -640,7 +640,7 @@ public class LauncherController {
 	
 	/*
 	 * Die Eingaben beim Spieler 3 werden auf Vollstaendigkeit und Richtigkeit ueberprueft.
-	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu Große oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
+	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu GroÃŸe oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
 	 * @return Es wird true zurueckgegeben wenn alles richtig und vollstaendig ist und die Eingaben werden den ArrayList hinzugefuegt
 	 */
 	public boolean checkSelection3 () {
@@ -669,7 +669,7 @@ public class LauncherController {
 	
 	/*
 	 * Die Eingaben beim Spieler 4 werden auf Vollstaendigkeit und Richtigkeit ueberprueft.
-	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu Große oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
+	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu GroÃŸe oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
 	 * @return Es wird true zurueckgegeben wenn alles richtig und vollstaendig ist und die Eingaben werden den ArrayList hinzugefuegt
 	 */
 	public boolean checkSelection4 () {
@@ -699,7 +699,7 @@ public class LauncherController {
 		
 	/*
 	 * Die Eingaben beim Spieler 5 werden auf Vollstaendigkeit und Richtigkeit ueberprueft.
-	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu Große oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
+	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu GroÃŸe oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
 	 * @return Es wird true zurueckgegeben wenn alles richtig und vollstaendig ist und die Eingaben werden den ArrayList hinzugefuegt
 	 */
 	public boolean checkSelection5 () {
@@ -729,7 +729,7 @@ public class LauncherController {
 		
 	/*
 	 * Die Eingaben beim Spieler 6 werden auf Vollstaendigkeit und Richtigkeit ueberprueft.
-	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu Große oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
+	 * @return Es wird false zurueckgegeben wenn nicht alles richtig und vollstaendig ist, also die TextFelder nicht oder falsch ausgefuellt wurden, hierzu zaehlt auch die Eingabe von Sonderzeichen oder eine zu GroÃŸe oder zu Kleine Eingabe erfolgt ist oder mehrere Spieler die gleiche Farbe gewaehlt haben
 	 * @return Es wird true zurueckgegeben wenn alles richtig und vollstaendig ist und die Eingaben werden den ArrayList hinzugefuegt
 	 */
 	public boolean checkSelection6 () {
@@ -789,7 +789,7 @@ public class LauncherController {
 	 */
 	public void buttonOnActionStart(ActionEvent event) {
 		/*
-		 * Schließen des Launcher Fensters
+		 * SchlieÃŸen des Launcher Fensters
 		 */
 		Stage currentStage = (Stage)btnStartGame.getScene().getWindow();
 		currentStage.close();
@@ -806,9 +806,8 @@ public class LauncherController {
 				GameBoardSixPlayersController gbsp = fxmlloader.getController(); 
 				gbsp.initialize(playerName, color, rival, numberOfPlayers);
 				Stage secondaryStage = new Stage();
-				secondaryStage.setTitle("Game Board");
+				secondaryStage.setTitle("Sechser Spielbrett");
 				secondaryStage.setScene(new Scene(root, 600, 450)); 
-				secondaryStage.setFullScreen(true);
 				secondaryStage.show();
 				
 			} catch (IOException e) {
@@ -826,9 +825,8 @@ public class LauncherController {
 				GameBoardFourPlayersController gbfp = fxmlloader.getController(); 
 				gbfp.initialize(playerName, color, rival, numberOfPlayers);
 				Stage secondaryStage = new Stage();
-				secondaryStage.setTitle("Game Board");
+				secondaryStage.setTitle("Vierer Spielbrett");
 				secondaryStage.setScene(new Scene(root, 600, 450)); 
-				secondaryStage.setFullScreen(true);
 				secondaryStage.show();
 				
 			} catch (IOException e) {
@@ -840,10 +838,11 @@ public class LauncherController {
 	@FXML
 	/*
 	 *  Event Listener fuer den Button Spiel beenden.
-	 *  Dieser schließt das Programm
+	 *  Dieser schlieÃŸt das Programm
 	 */
 	public void buttonOnActionExit(ActionEvent event) {
 		
 		System.exit(0);
 	}
 }
+
