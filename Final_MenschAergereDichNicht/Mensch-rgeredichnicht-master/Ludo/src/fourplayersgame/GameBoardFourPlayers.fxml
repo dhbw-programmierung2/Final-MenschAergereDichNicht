@@ -422,15 +422,15 @@
                   <Insets left="13.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="btnExitGame" mnemonicParsing="false" onAction="#buttonExitGameOnAction" prefHeight="25.0" prefWidth="124.0" text="Spiel Beenden" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+            <Button fx:id="btnExitGame" mnemonicParsing="false" onAction="#buttonExitGameOnAction" text="Spiel Beenden" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
                <GridPane.margin>
-                  <Insets left="30.0" />
+                  <Insets left="50.0" />
                </GridPane.margin>
             </Button>
-            <TextField fx:id="txtPlayer2" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
-            <TextField fx:id="txtPlayer1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
-            <TextField fx:id="txtPlayer4" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
-            <TextField fx:id="txtPlayer3" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer2" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer1" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer4" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer3" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
             <ImageView fx:id="imgDice" fitHeight="58.0" fitWidth="58.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
                <image>
                   <Image url="@../pictures/Dice1.png" />
