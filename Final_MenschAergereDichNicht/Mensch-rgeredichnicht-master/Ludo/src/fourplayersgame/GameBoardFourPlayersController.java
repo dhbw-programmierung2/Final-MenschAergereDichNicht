@@ -27,7 +27,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 
 /**
- * Dieser Controller ist für das Steuern und initialisieren des Spielfeld zuständig.
+ * Dieser Controller ist fÃ¼r das Steuern und initialisieren des Spielfeld zustÃ¤ndig.
  * Dieser synergiert mit dem GameBoardFourPlayers.fxml
  * 
  * @author Lukas, Kim, Isabelle, Jonas
@@ -406,3 +406,4 @@ public class GameBoardFourPlayersController {
 		System.exit(0);
 	}
 }
+
