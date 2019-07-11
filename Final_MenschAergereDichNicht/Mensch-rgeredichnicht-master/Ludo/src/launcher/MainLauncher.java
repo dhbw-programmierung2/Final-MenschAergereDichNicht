@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 
 
 /**
- * Diese Klasse ist Verantwortlich den Launcher auszuführen
+ * Diese Klasse ist Verantwortlich den Launcher auszufÃ¼hren
  * 
  * @author Lukas, Kim, Isabelle, Jonas
  * @version 1.0
@@ -19,7 +19,7 @@ public class MainLauncher extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("Launcher.fxml")); 
-	        primaryStage.setTitle("Game Board"); 
+	        primaryStage.setTitle("Auswahlfeld"); 
 	        primaryStage.setScene(new Scene(root, 750, 450)); 
 	        primaryStage.show(); 
 		} catch(Exception e) {
