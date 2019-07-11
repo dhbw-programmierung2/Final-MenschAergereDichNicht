@@ -1,10 +1,9 @@
 # To-do List:
 
-- BTN Würfel setDiasabled solange nicht gezogen!!
-- bei 3 und 5 spieler öffnet sich nicht das Board bzw bei 5 spieler ohne token
-- Mouseclickevent zum token ziehen
-- Logik
-- Alle "ü" in ue tauschen
+- Btn Disabled Funktion braucht noch Aktion das Spieler zieht
+- kein zugriff mehr auf 6 spieler board (3,5,6 spieler)
+- Logik ziehen mit gui implementieren
+- Logik / aufräumen richtige rein ?!
 - Erste Runde nur würfeln um zu bestimmen wer anfangen darf
 
 # Gruppenprojekt Mensch ärgere dich nicht - Programmierung II
