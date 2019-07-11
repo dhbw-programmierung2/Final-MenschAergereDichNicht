@@ -13,7 +13,7 @@
 
 <SplitPane fx:id="splitPane" dividerPositions="0.6978653530377669" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sixplayersgame.GameBoardSixPlayersController">
   <items>
-      <GridPane fx:id="gridPaneLeft" style="-fx-background-color: Grey;">
+      <GridPane fx:id="gridPaneLeft" style="-fx-background-color: rgb(95,95,95);">
         <columnConstraints>
             <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
@@ -474,14 +474,14 @@
                   <Insets left="1.0" />
                </GridPane.margin>
             </Circle>
-            <Circle fill="#cb1eff" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8" GridPane.vgrow="ALWAYS">
+            <Circle fx:id="crcAimPurple4" fill="#cb1eff" radius="10.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8" GridPane.vgrow="ALWAYS">
                <GridPane.margin>
                   <Insets left="1.0" />
                </GridPane.margin>
             </Circle>
          </children>
       </GridPane>
-      <GridPane fx:id="gridPaneRigth" style="-fx-background-color: LightGrey;">
+      <GridPane fx:id="gridPaneRigth" style="-fx-background-color: rgb(135,135,135);">
         <columnConstraints>
           <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
@@ -502,17 +502,17 @@
                   <Insets left="13.0" />
                </GridPane.margin>
             </Button>
-            <TextField fx:id="txtPlayer1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
-            <Button fx:id="btnExitGame" mnemonicParsing="false" onAction="#buttonExitGameOnAction" prefHeight="25.0" prefWidth="124.0" text="Spiel Beenden" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="txtPlayer1" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+            <Button fx:id="btnExitGame" mnemonicParsing="false" onAction="#buttonExitGameOnAction" text="Spiel Beenden" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.vgrow="ALWAYS">
                <GridPane.margin>
-                  <Insets left="30.0" />
+                  <Insets left="50.0" />
                </GridPane.margin>
             </Button>
-            <TextField fx:id="txtPlayer2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-            <TextField fx:id="txtPlayer5" GridPane.columnSpan="2" GridPane.rowIndex="5" />
-            <TextField fx:id="txtPlayer4" GridPane.columnSpan="2" GridPane.rowIndex="4" />
-            <TextField fx:id="txtPlayer3" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <TextField fx:id="txtPlayer6" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+            <TextField fx:id="txtPlayer2" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer5" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer4" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer3" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtPlayer6" disable="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS" />
             <ImageView fx:id="imgDice" fitHeight="58.0" fitWidth="58.0" preserveRatio="true" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
                <image>
                   <Image url="@../pictures/Dice1.png" />
@@ -525,3 +525,4 @@
       </GridPane>
   </items>
 </SplitPane>
+
