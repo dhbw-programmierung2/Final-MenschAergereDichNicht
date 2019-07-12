@@ -394,6 +394,37 @@ public class GameBoardFourPlayersController {
 					btnRollTheDice.setDisable(false);
 			}
 		}
+		
+		if (LauncherController.numberOfPlayers == 2) {
+			
+			int[] anfangsWuerfe = new int[2];
+			
+			if ((round == 0) && (event.getSource()==btnRollTheDice)) {
+				anfangsWuerfe[0] = value;
+			
+			}
+			if ((round == 1) && (event.getSource()==btnRollTheDice)) {
+				anfangsWuerfe[1] = value;
+			
+			}
+	
+		}
+		else {
+			
+			int[] anfangsWuerfe = new int[4];
+			
+			if ((round == 0) && (event.getSource()==btnRollTheDice)) {
+				anfangsWuerfe[0] = value;
+		}
+			if ((round == 1) && (event.getSource()==btnRollTheDice)) {
+				anfangsWuerfe[1] = value;
+		}
+			if ((round == 2) && (event.getSource()==btnRollTheDice)) {
+				anfangsWuerfe[2] = value;
+		}
+			if ((round == 3) && (event.getSource()==btnRollTheDice)) {
+				anfangsWuerfe[3] = value;
+		}
 	}
 	
 	/*
