@@ -321,7 +321,33 @@ public class GameBoardFourPlayersController {
 	 */
 	@FXML
 	public void circleOnActionM(MouseEvent event) {
+		//Ansprechen der Startfelder auf Klick
+		if (beginFieldsGui.equals(event.getSource())) {
+			
+			for (int i = 0; i < beginFieldsGui.size(); i++) {
+				if (beginFieldsGui.get(i).getFill() != null) {
+					
+				//	beginFieldsGui.get(i).setFill();
+					
+					System.out.println("test");
+				}
+			}
+		}
 		
+		//Ansprechen der Endfelder auf Klick
+		if (aimFieldsGui.equals(event.getSource())) {
+			for (int i = 0; i < aimFieldsGui.size(); i++) {
+				if(aimFieldsGui.get(i).getFill() !=null) {
+					
+				}
+			}
+		}
+
+				
+		//Ansprechen der Lauffelder auf Klick
+		if (fieldsGui.equals(event.getSource())) {
+			
+		}
 	}
 	
 	/*
