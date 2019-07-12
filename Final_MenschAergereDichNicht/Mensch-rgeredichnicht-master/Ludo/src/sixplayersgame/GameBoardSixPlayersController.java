@@ -375,7 +375,21 @@ public class GameBoardSixPlayersController {
 	 */
 	@FXML
 	public void circleOnActionM(MouseEvent event) {
-		
+		//Ansprechen der Startfelder auf Klick
+		if (beginFieldsGui.equals(event.getSource())) {
+								
+		}
+				
+		//Ansprechen der Endfelder auf Klick
+		if (aimFieldsGui.equals(event.getSource())) {
+					
+		}
+
+						
+		//Ansprechen der Lauffelder auf Klick
+		if (fieldsGui.equals(event.getSource())) {
+					
+		}
 	}
 	/*
 	 *  Event Listener fuer
